@@ -81,7 +81,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |name, holiday|
     holiday.each do |day, value|
       if value {|d| d=="BBQ"}
-          return day
+          return value
         end
     end
   end
