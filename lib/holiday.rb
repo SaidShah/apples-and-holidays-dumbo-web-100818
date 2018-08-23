@@ -82,6 +82,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |day, value|
       if value {|d| d=="BBQ"}
           return day
+          
     end
   end
 end
