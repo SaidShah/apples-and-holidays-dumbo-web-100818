@@ -81,7 +81,8 @@ def all_holidays_with_bbq(holiday_hash)
   supply_array = []
   holiday_hash.each do |name, holiday|
     holiday.each do |day, value|
-      
+      value.each {|x| x=="BBQ"}
+          supply_array << day
    end
   end
   supply_array
