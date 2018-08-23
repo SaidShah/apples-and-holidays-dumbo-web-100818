@@ -82,7 +82,7 @@ def all_holidays_with_bbq(holiday_hash)
     holiday.each do |day, value|
       value.each do |x|
         if x == "BBQ"
-          return holiday.keys
+          return holiday.keys.flatten
         end
       end
     end
